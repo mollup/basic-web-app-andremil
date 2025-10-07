@@ -67,11 +67,6 @@ export default function QueryProcessor(query: string): string {
     return "97b91e1a";
   }
 
-  // Prefer exact phrasing "your name" for the personal name response used in tests
-  if (lower.includes("your name")) {
-    return "Rohan";
-  }
-
   if (lower.includes("name")) {
     return "andremildeluxe";
   }
