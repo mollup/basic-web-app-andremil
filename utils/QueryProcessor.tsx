@@ -7,6 +7,14 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
+  if (query.toLowerCase().includes("gameid")) {
+    return "5f34a61a";
+  }
+
+  if (query.toLowerCase().includes("playerid")) {
+    return "97b91e1a";
+  }
+
   if (query.toLowerCase().includes("name")) {
     return "andremildeluxe";
   }
